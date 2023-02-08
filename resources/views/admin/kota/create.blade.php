@@ -21,6 +21,9 @@
                                 @enderror
                             </div>
                                     <button class="btn btn-primary" type="submit">Tambah</button>
+                                    <a href="{{ route('kota.index') }}" class="btn btn-primary">
+                                        Kembali
+                                    </a>
                                 </div>
                             </div>
                         </form>

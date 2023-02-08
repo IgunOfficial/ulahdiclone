@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    Selamat datang <b>{{Auth::user()->name }}</b>
                 </div>
             </div>
         </div>
