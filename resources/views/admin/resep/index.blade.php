@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    Data Kota
+                    Data Resep
                     <a href="{{ route('resep.create') }}" class="btn btn-sm btn-primary" style="float: right">
                         Tambah Data
                     </a>

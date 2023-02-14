@@ -39,7 +39,7 @@
       <a href="" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets1/img/logo.png" alt=""> -->
-        <h1>Igun Resep<span>.</span></h1>
+        <h1>Resep Makanan<span>.</span></h1>
       </a>
 
       <nav id="navbar" class="navbar">
@@ -67,7 +67,7 @@
     <div class="container">
       <div class="row justify-content-between gy-5">
         <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up">Selamat Datang di<br>Igun Resep</h2>
+          <h2 data-aos="fade-up">Selamat Datang di<br>Resep Makanan</h2>
           <p data-aos="fade-up" data-aos-delay="100">Disini Anda bisa membagi resep dan melihat berbagai resep.</p>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
@@ -84,8 +84,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>About Us</h2>
-          <p>Learn More <span>About Us</span></p>
+          <p><span>Tentang Kami</span></p>
         </div>
 
         <div class="row gy-4">
@@ -94,18 +93,19 @@
           <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Website resep makanan adalah sebuah website yang 
+                di dalamnya berisi macam-macam resep makanan beserta
+                tercantum langkah-langkah pembuatannya juga seperti apa
+                dan bagaimana. Disini juga anda bisa berbagi resep kepada
+                orang-orang yang mengunjungi website ini, untuk panduan
+                berbagi resep langkah-langkahnya sebagai berikut :
               </p>
               <ul>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i class="bi bi-check2-all"></i> Masuk ke website resep makanan.</li>
+                <li><i class="bi bi-check2-all"></i> Daftar terlebih dahulu.(bila belum punya akun)</li>
+                <li><i class="bi bi-check2-all"></i> Setelah daftar maka akan masuk ke halaman bagi resep.</li>
+                <li><i class="bi bi-check2-all"></i> Setelah data resep dibuat,maka anda akan menunggu persetujuan dari admin apakah resep anda akan di acc atau tidak.</li>
               </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-              </p>
 
               <div class="position-relative mt-4">
                 <img src="assets1/img/about2.jpg" class="img-fluid" alt="">
@@ -119,7 +119,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
+    {{-- <section id="why-us" class="why-us section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
@@ -209,7 +209,8 @@
         </div>
 
       </div>
-    </section><!-- End Stats Counter Section -->
+    </section> --}}
+    <!-- End Stats Counter Section -->
 
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu">
@@ -567,7 +568,7 @@
     </section><!-- End Menu Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
+    {{-- <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -679,10 +680,11 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> --}}
+    <!-- End Testimonials Section -->
 
     <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
+    {{-- <section id="events" class="events">
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="section-header">
@@ -722,10 +724,11 @@
         </div>
 
       </div>
-    </section><!-- End Events Section -->
+    </section> --}}
+    <!-- End Events Section -->
 
     <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs section-bg">
+    {{-- <section id="chefs" class="chefs section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -795,10 +798,11 @@
         </div>
 
       </div>
-    </section><!-- End Chefs Section -->
+    </section> --}}
+    <!-- End Chefs Section -->
 
     <!-- ======= Book A Table Section ======= -->
-    <section id="book-a-table" class="book-a-table">
+    {{-- <section id="book-a-table" class="book-a-table">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -854,10 +858,11 @@
         </div>
 
       </div>
-    </section><!-- End Book A Table Section -->
+    </section> --}}
+    <!-- End Book A Table Section -->
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery section-bg">
+    {{-- <section id="gallery" class="gallery section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -880,7 +885,8 @@
         </div>
 
       </div>
-    </section><!-- End Gallery Section -->
+    </section> --}}
+    <!-- End Gallery Section -->
 
 
   </main><!-- End #main -->

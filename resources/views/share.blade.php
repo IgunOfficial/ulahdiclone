@@ -26,10 +26,45 @@
                 <div class="card">
                     <div class="card-header">
                         <b>Buat Resep Anda Disini</b>
+                        <ul class="navbar-nav align-items-center d-none d-md-flex">
+                            <li class="nav-item dropdown">
+                              <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <div class="media align-items-center">
+                                  <span class="avatar avatar-sm rounded-circle">
+                                    <img alt="Image placeholder" src="{{asset('assets/img/pp.png')}}">
+                                  </span>
+                                  <div class="media-body ml-2 d-none d-lg-block">
+                                    <span class="mb-0 text-sm  font-weight-bold">{{Auth::user()->name }}</span>
+                                  </div>
+                                </div>
+                              </a>
+                              
+                              <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                              document.getElementById('logout-form').submit();">
+                                  <i class="ni ni-user-run"></i>
+                                  <span>Logout</span>
+                                  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                  </form>
+                                </a>
+                              </div>
+                            </li>
+                          </ul>
                     </div>
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form action="{{ route('share.store') }}" method="post" enctype="multipart/form-data">
                             @csrf
+                            <div class="mb-3">
+                                <label>Resep dari daerah :</label>
+                                <select name="kota_id"
+                                  class="form-control @error('kota_id') is-invalid @enderror">
+                                  @foreach ($kotas as $kota)
+                                    <option value="{{ $kota->id }}">{{ $kota->nama_kota }}</option>
+                                  @endforeach
+                                </select>
+                              </div>
                             <div class="mb-3">
                                 <label class="form-label"><b>Judul Makanan :</b></label>
                                 <input type="text" class="form-control" name="judul">
@@ -76,5 +111,6 @@
         application: "argon-dashboard-free"
       });
   </script>
+  @include('sweetalert::alert')
 </body>
 </html>

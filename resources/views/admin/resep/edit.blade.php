@@ -11,9 +11,9 @@
           <input type="radio" name="status" value="Setuju"> Setuju<br>
           <input type="radio" name="status" value="Tolak"> Tolak
           <div class="form-check form-check-flat form-check-dark">
-          </div>
-          <button type="submit" class="btn btn-dark mr-2">Kirim</button>
-          <a href="{{route('resep.index')}}" class="btn btn-dark mr-2">
+          </div> <br>
+          <button type="submit" class="btn btn-primary">Kirim</button>
+          <a href="{{route('resep.index')}}" class="btn btn-primary">
             Kembali
           </a>
         </form>

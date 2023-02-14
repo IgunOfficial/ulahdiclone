@@ -100,7 +100,7 @@
                     <input class="form-control" placeholder="Password" type="password" name="password">
                   </div>
                 </div>
-                <input type="radio" name="role" value="Admin"> Admin<br>
+                {{-- <input type="radio" name="role" value="Admin"> Admin<br> --}}
                 <input type="radio" name="role" value="User"> User
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary mt-4">Daftar</button>
