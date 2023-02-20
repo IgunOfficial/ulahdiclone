@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Kategori;
+use App\Models\Koleksi;
 use Illuminate\Http\Request;
 
-class KategoriController extends Controller
+class KoleksiController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class KategoriController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Kategori  $kategori
+     * @param  \App\Models\Koleksi  $koleksi
      * @return \Illuminate\Http\Response
      */
-    public function show(Kategori $kategori)
+    public function show(Koleksi $koleksi)
     {
         //
     }
@@ -52,10 +52,10 @@ class KategoriController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Kategori  $kategori
+     * @param  \App\Models\Koleksi  $koleksi
      * @return \Illuminate\Http\Response
      */
-    public function edit(Kategori $kategori)
+    public function edit(Koleksi $koleksi)
     {
         //
     }
@@ -64,10 +64,10 @@ class KategoriController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Kategori  $kategori
+     * @param  \App\Models\Koleksi  $koleksi
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Kategori $kategori)
+    public function update(Request $request, Koleksi $koleksi)
     {
         //
     }
@@ -75,10 +75,10 @@ class KategoriController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Kategori  $kategori
+     * @param  \App\Models\Koleksi  $koleksi
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Kategori $kategori)
+    public function destroy(Koleksi $koleksi)
     {
         //
     }
