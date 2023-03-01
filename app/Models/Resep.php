@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 use App\Models\Kota;
+use App\Models\Kategori;
 
 class Resep extends Model
 {
@@ -19,6 +20,11 @@ class Resep extends Model
     public function kota()
     {
         return $this->belongsTo(Kota::class);
+        
+    }
+    public function kategori()
+    {
+        return $this->belongsTo(Kategori::class);
         
     }
     public function image()

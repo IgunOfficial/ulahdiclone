@@ -57,14 +57,23 @@
                         <form action="{{ route('share.store') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="mb-3">
-                                <label>Resep dari daerah :</label>
+                                <label><b>Resep dari Daerah :</b></label>
                                 <select name="kota_id"
                                   class="form-control @error('kota_id') is-invalid @enderror">
                                   @foreach ($kotas as $kota)
                                     <option value="{{ $kota->id }}">{{ $kota->nama_kota }}</option>
                                   @endforeach
                                 </select>
-                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <label><b>Kategori Makanan :</b></label>
+                              <select name="kategori_id"
+                                class="form-control @error('kategori_id') is-invalid @enderror">
+                                @foreach ($kategoris as $kategori)
+                                  <option value="{{ $kategori->id }}">{{ $kategori->nama_kategori }}</option>
+                                @endforeach
+                              </select>
+                          </div>
                             <div class="mb-3">
                                 <label class="form-label"><b>Judul Makanan :</b></label>
                                 <input type="text" class="form-control" name="judul">
@@ -86,6 +95,7 @@
                                 <label class="form-label"><b>Langkah-Langkah :</b></label>
                                 <textarea name="langkah_langkah" id="" rows="5" class="form-control"></textarea>
                             </div>
+                           
                                     <button class="btn btn-primary" type="submit">Buat</button>
                                 </div>
                             </div>

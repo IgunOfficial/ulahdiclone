@@ -19,13 +19,14 @@ return new class extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->unsignedBigInteger('kota_id');
             $table->foreign('kota_id')->references('id')->on('kotas')->onDelete('cascade');
+            $table->unsignedBigInteger('kategori_id');
+            $table->foreign('kategori_id')->references('id')->on('kategoris')->onDelete('cascade');
             $table->string('judul');
             $table->string('gambar_resep');
             $table->text('deskripsi');
             $table->text('bahan_bahan');
             $table->text('langkah_langkah');
             $table->enum('status',['Setuju','Tolak','Proses'])->default('Proses');
-            $table->enum('kategori',['Berat','Ringan','Pilih'])->default('Pilih');
             $table->timestamps();
         });
     }

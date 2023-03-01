@@ -28,7 +28,7 @@ class KotaController extends Controller
         $kota = new Kota();
         $kota->nama_kota = $request->nama_kota;
         $kota->save();
-        Alert::success('Done', 'Data berhasil dibuat')->autoClose(2000);
+        Alert::success('Berhasil', 'Data berhasil dibuat')->autoClose(2000);
         return redirect()->route('kota.index');
     }
 
@@ -53,7 +53,7 @@ class KotaController extends Controller
         $kota = Kota::findOrFail($id);
         $kota->nama_kota = $request->nama_kota;
         $kota->save();
-        Alert::success('Done', 'Data berhasil diedit')->autoClose(2000);
+        Alert::success('Berhasil', 'Data berhasil diedit')->autoClose(2000);
         return redirect()->route('kota.index');
     }
 

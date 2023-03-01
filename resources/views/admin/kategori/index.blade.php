@@ -6,8 +6,8 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    Data Resep
-                    <a href="{{ route('resep.create') }}" class="btn btn-sm btn-primary" style="float: right">
+                    Data Kategori
+                    <a href="{{ route('kategori.create') }}" class="btn btn-sm btn-primary" style="float: right">
                         Tambah Data
                     </a>
                 </div>
@@ -18,29 +18,21 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>User</th>
-                                    <th>Nama Kota</th>
-                                    <th>Kategori Makanan</th>
-                                    <th>Judul</th>
-                                    <th>Status</th>
+                                    <th>Nama Kategori</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @php $no = 1; @endphp
-                                @foreach ($reseps as $resep)
+                                @foreach ($kategori as $data)
                                 <tr>
-                                    <td>{{$loop->iteration }}</td>
-                                    <td>{{$resep->user->name}}</td>
-                                    <td>{{$resep->kota->nama_kota}}</td>
-                                    <td>{{$resep->kategori->nama_kategori}}</td>
-                                    <td>{{$resep->judul}}</td>
-                                    <td>{{$resep->status}}</td>
+                                    <td>{{ $no++ }}</td>
+                                    <td>{{ $data->nama_kategori }}</td>
                                     <td>
-                                        <form action="{{ route('resep.destroy', $resep->id) }}" method="post">
+                                        <form action="{{ route('kategori.destroy', $data->id) }}" method="post">
                                             @csrf
                                             @method('delete')
-                                            <a href="{{ route('resep.edit', $resep->id) }}"
+                                            <a href="{{ route('kategori.edit', $data->id) }}"
                                                 class="btn btn-sm btn-outline-success">
                                                 Edit
                                             </a> |

@@ -217,34 +217,36 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Our Menu</h2>
-          <p>Check Our <span>Yummy Menu</span></p>
+          
+          <p>Pilih <span>Kategori</span></p>
         </div>
 
         <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
           <li class="nav-item">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
-              <h4>Starters</h4>
+              <h4>Makanan Berat</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
-              <h4>Breakfast</h4>
+              <h4>Makanan Ringan</h4>
             </a><!-- End tab nav item -->
 
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
               <h4>Lunch</h4>
             </a>
-          </li><!-- End tab nav item -->
+          </li>
+          <!-- End tab nav item -->
 
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
               <h4>Dinner</h4>
             </a>
-          </li><!-- End tab nav item -->
+          </li> --}}
+          <!-- End tab nav item -->
 
         </ul>
 
@@ -252,47 +254,47 @@
 
           <div class="tab-pane fade active show" id="menu-starters">
 
-            <div class="tab-header text-center">
+            {{-- <div class="tab-header text-center">
               <p>Menu</p>
               <h3>Starters</h3>
-            </div>
+            </div> --}}
 
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
                 <a href="assets1/img/menu/menu-item-1.png" class="glightbox"><img src="assets1/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <h4>Tahu Gejrot</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                {{-- <p class="price">
                   $5.95
-                </p>
+                </p> --}}
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="assets1/img/menu/menu-item-2.png" class="glightbox"><img src="assets1/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <h4>Dimsum</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                {{-- <p class="price">
                   $14.95
-                </p>
+                </p> --}}
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="assets1/img/menu/menu-item-3.png" class="glightbox"><img src="assets1/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <h4>Lotek</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                {{-- class="price">
                   $8.95
-                </p>
+                </pclass=> --}}
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
+              {{-- <div class="col-lg-4 menu-item">
                 <a href="assets1/img/menu/menu-item-4.png" class="glightbox"><img src="assets1/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Eos Luibusdam</h4>
                 <p class="ingredients">
@@ -301,7 +303,8 @@
                 <p class="price">
                   $12.95
                 </p>
-              </div><!-- Menu Item -->
+              </div>
+              <!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="assets1/img/menu/menu-item-5.png" class="glightbox"><img src="assets1/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
@@ -312,7 +315,8 @@
                 <p class="price">
                   $12.95
                 </p>
-              </div><!-- Menu Item -->
+              </div>
+              <!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="assets1/img/menu/menu-item-6.png" class="glightbox"><img src="assets1/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
@@ -323,7 +327,8 @@
                 <p class="price">
                   $9.95
                 </p>
-              </div><!-- Menu Item -->
+              </div> --}}
+              <!-- Menu Item -->
 
             </div>
           </div><!-- End Starter Menu Content -->
