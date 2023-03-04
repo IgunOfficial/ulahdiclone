@@ -25,7 +25,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <b>Buat Resep Anda Disini</b>
+                        <b>Profil</b>
                         <ul class="navbar-nav align-items-center d-none d-md-flex">
                             <li class="nav-item dropdown">
                               <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -41,10 +41,6 @@
                               </a>
                               
                               <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-                                <a href="{{ url('/profile') }}">
-                                <i class="ni ni-user-run"></i>
-                                <span>Profil</span>
-                              </a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                               document.getElementById('logout-form').submit();">
                                   <i class="ni ni-user-run"></i>
@@ -58,52 +54,52 @@
                           </ul>
                     </div>
                     <div class="card-body">
-                        <form action="{{ route('share.store') }}" method="post" enctype="multipart/form-data">
-                            @csrf
-                            <div class="mb-3">
-                                <label><b>Resep dari Daerah :</b></label>
-                                <select name="kota_id"
-                                  class="form-control @error('kota_id') is-invalid @enderror">
-                                  @foreach ($kotas as $kota)
-                                    <option value="{{ $kota->id }}">{{ $kota->nama_kota }}</option>
-                                  @endforeach
-                                </select>
+                        {{-- didieu tempelkeunna --}}
+                        <div class="row">
+                            {{-- <div class="col-sm-12 col-md-6 col-lg-3">
+                                <img class="img-profile rounded-circle"
+                                    src="{{ asset(auth()->user()->image()) }}" width="200px">
+                            </div> --}}
+                            <div class="col-sm-12 col-md-6 col-lg-9">
+                                <h1>{{ auth()->user()->name }}</h1>
+                                {{-- {{ auth()->user()->name }} --}}
+                                <p><i class="bi bi-envelope "></i> <a
+                                        href="https://mail.google.com/">{{ auth()->user()->email }}</a>
+                                    {{-- {{ auth()->user()->role }} --}}
+                                </p>
                             </div>
+                        </div>
+                        <br>
+                        <h2>Account</h2>
+                        <br>
+                        <div class="row pb-5">
                             <div class="mb-3">
-                              <label><b>Kategori Makanan :</b></label>
-                              <select name="kategori_id"
-                                class="form-control @error('kategori_id') is-invalid @enderror">
-                                @foreach ($kategoris as $kategori)
-                                  <option value="{{ $kategori->id }}">{{ $kategori->nama_kategori }}</option>
-                                @endforeach
-                              </select>
-                          </div>
-                            <div class="mb-3">
-                                <label class="form-label"><b>Judul Makanan :</b></label>
-                                <input type="text" class="form-control" name="judul">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                              </div>
+                            {{-- <div class="col-sm-12 col-md-6 col-lg-3">
+                                <h5>Username</h5>
+                                <br>
+                                <h5>Email</h5>
+                                <br>
+                                <h5>Password</h5>
+                                <br>
+                                <h5>Full Name</h5>
+                                <br>
+                                <h5>Role</h5>
                             </div>
-                            
-                            <div class="mb-3">
-                                <label class="form-label"><b>Foto Makanan :</b></label>
-                                <input type="file" class="form-control" name="gambar_resep">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label"><b>Deskripsi :</b></label>
-                                <textarea name="deskripsi" id="" rows="5" class="form-control"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label"><b>Bahan-Bahan :</b></label>
-                                <textarea name="bahan_bahan" id="" rows="5" class="form-control"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label"><b>Langkah-Langkah :</b></label>
-                                <textarea name="langkah_langkah" id="" rows="5" class="form-control"></textarea>
-                            </div>
-                           
-                                    <button class="btn btn-primary" type="submit">Buat</button>
-                                </div>
-                            </div>
-                        </form>
+                            <div class="col-sm-12 col-md-6 col-lg-5">
+                                <input type="text" value="{{ auth()->user()->username }}" disabled class="form-control">
+                                <br>
+                                <input type="text" value="{{ auth()->user()->email }}" disabled class="form-control">
+                                <br>
+                                <input type="password" value="{{ auth()->user()->password }}" disabled class="form-control">
+                                <br>
+                                <input type="text" value="{{ auth()->user()->name }}" disabled class="form-control">
+                                <br>
+                                <input type="text" value="{{ auth()->user()->role }}" disabled class="form-control">
+                            </div> --}}
+                        </div>
                     </div>
                 </div>
             </div>

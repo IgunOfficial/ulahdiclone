@@ -26,6 +26,7 @@ Route::middleware('auth')->group(function(){
     //     return view('share');
     // });
     Route::resource('/share', ShareController::class);
+    Route::resource('/profile', ProfileController::class);
 });
 
 
