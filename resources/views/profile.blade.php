@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>
-    Share
+    Profil
   </title>
   <!-- Favicon -->
   <link href="{{asset('/assets/img/brand/favicon.png')}}" rel="icon" type="image/png')}}">
@@ -40,7 +40,7 @@
                                 </div>
                               </a>
                               
-                              <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                              <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right"> 
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                               document.getElementById('logout-form').submit();">
                                   <i class="ni ni-user-run"></i>
@@ -52,6 +52,7 @@
                               </div>
                             </li>
                           </ul>
+                          <span>Bagi resep?<a href="/share"><i><u>klik disini</u></i></a></span>
                     </div>
                     <div class="card-body">
                         {{-- didieu tempelkeunna --}}
@@ -63,21 +64,47 @@
                             <div class="col-sm-12 col-md-6 col-lg-9">
                                 <h1>{{ auth()->user()->name }}</h1>
                                 {{-- {{ auth()->user()->name }} --}}
-                                <p><i class="bi bi-envelope "></i> <a
-                                        href="https://mail.google.com/">{{ auth()->user()->email }}</a>
+                                <p>
+                                    <i class="bi bi-envelope "></i> <a href="https://mail.google.com/">{{ auth()->user()->email }}</a>
                                     {{-- {{ auth()->user()->role }} --}}
                                 </p>
                             </div>
                         </div>
-                        <br>
-                        <h2>Account</h2>
-                        <br>
-                        <div class="row pb-5">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                              </div>
-                            {{-- <div class="col-sm-12 col-md-6 col-lg-3">
+                        <h2 class="my-4">Account</h2>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <h5>Email</h5>
+                            </div>
+                            <div class="col-md-4 col-lg-5">
+                                <input type="text" value="{{ auth()->user()->email }}" disabled class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <h5>Password</h5>
+                            </div>
+                            <div class="col-md-4 col-lg-5">
+                                <input type="password" value="{{ auth()->user()->password }}" disabled class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <h5>Full Name</h5>
+                            </div>
+                            <div class="col-md-4 col-lg-5">
+                                <input type="text" value="{{ auth()->user()->name }}" disabled class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <h5>Role</h5>
+                            </div>
+                            <div class="col-md-4 col-lg-5">
+                                <input type="text" value="{{ auth()->user()->role }}" disabled class="form-control">
+                            </div>
+                        </div>
+                        {{-- <div class="row pb-5">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
                                 <h5>Username</h5>
                                 <br>
                                 <h5>Email</h5>
@@ -98,8 +125,8 @@
                                 <input type="text" value="{{ auth()->user()->name }}" disabled class="form-control">
                                 <br>
                                 <input type="text" value="{{ auth()->user()->role }}" disabled class="form-control">
-                            </div> --}}
-                        </div>
+                            </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

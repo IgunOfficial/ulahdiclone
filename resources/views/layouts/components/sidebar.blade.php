@@ -16,7 +16,7 @@
     </li>
     <li class="nav-item  active ">
       <a class="nav-link  active " href="{{ url('/admin/resep') }}">
-        <i class="ni ni-bullet-list-67 text-red"></i> Resep Makanan
+        <i class="ni ni-bullet-list-67 text-red"></i> Resep Makanan Masuk
       </a>
     </li>
     <li class="nav-item  active ">
